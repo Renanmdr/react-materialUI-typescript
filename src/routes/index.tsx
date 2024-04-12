@@ -5,7 +5,7 @@ export const AppRoutes = () => {
     return (
         <BrowserRouter>
           <Routes>
-            <Route path='/' element={<Home />} />
+            <Route path='/' element={<Home  />} />
             <Route path='*' element={<Navigate to={'/'}/>} />
           </Routes>
         </BrowserRouter>
