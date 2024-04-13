@@ -1,6 +1,6 @@
 
-import { AppRoutes } from "./routes";
-import { AppThemeProvider } from "./shared/contexts";
+import { AppRoutes } from './routes';
+import { AppThemeProvider } from './shared/contexts';
 
 
 export function App() {
@@ -8,11 +8,11 @@ export function App() {
 
   return (
     <>
-    <AppThemeProvider>
-      <AppRoutes />
-    </AppThemeProvider>
+      <AppThemeProvider>
+        <AppRoutes />
+      </AppThemeProvider>
 
     </>
-  )
+  );
 }
 
