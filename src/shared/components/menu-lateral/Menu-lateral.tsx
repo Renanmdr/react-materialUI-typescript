@@ -1,5 +1,5 @@
 import { Avatar, Box, Divider, Drawer, Icon, List, ListItemButton, ListItemIcon, ListItemText, useMediaQuery, useTheme } from '@mui/material';
-import { useDrawerContext } from '../../contexts';
+import { useAppThemeContext, useDrawerContext } from '../../contexts';
 import { useMatch, useNavigate, useResolvedPath } from 'react-router-dom';
 
 
@@ -7,19 +7,19 @@ import { useMatch, useNavigate, useResolvedPath } from 'react-router-dom';
 interface IListItemLinkProps {
   icon: string
   label: string
-  to: string
+  to?: string
   onClick?: () => void
 }
 
 const ListItemLink: React.FC<IListItemLinkProps> = ({icon, label, onClick, to}) => {
   const navigate = useNavigate();
-
+  const path = to ? to : '';
   const handleClick = () => {
-    navigate(to);
+    navigate(path);
     onClick?.();
   };
 
-  const resolvePath = useResolvedPath(to);
+  const resolvePath = useResolvedPath(path);
   const match = useMatch({path: resolvePath.pathname, end: false});
   
   return (
@@ -40,6 +40,7 @@ export const MenuLateral: React.FC<IMenuLateralProps> = ({children}) => {
   const theme = useTheme();
   const isSmDown = useMediaQuery(theme.breakpoints.down('sm'));
   const {isDrawerOpen, toggleDrawerOpen, drawerOptions} = useDrawerContext();
+  const { toggleTheme } = useAppThemeContext();
   return (
     <>
       <Drawer open={isDrawerOpen} variant={isSmDown ? 'temporary' : 'permanent'} onClose={toggleDrawerOpen}>
@@ -63,6 +64,9 @@ export const MenuLateral: React.FC<IMenuLateralProps> = ({children}) => {
               ))}
              
             </List>
+          </Box>
+          <Box>
+            <ListItemLink label='Alternar tema' icon='dark_mode' onClick={toggleTheme}   />
           </Box>
 
         </Box>
