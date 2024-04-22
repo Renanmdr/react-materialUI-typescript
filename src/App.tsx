@@ -1,6 +1,9 @@
 
 import { AppRoutes } from './routes';
-import { AppThemeProvider } from './shared/contexts';
+import { MenuLateral } from './shared/components/menu-lateral/Menu-lateral';
+import { AppDrawerProvider, AppThemeProvider } from './shared/contexts';
+import { BrowserRouter } from 'react-router-dom';
+
 
 
 export function App() {
@@ -9,7 +12,15 @@ export function App() {
   return (
     <>
       <AppThemeProvider>
-        <AppRoutes />
+        <AppDrawerProvider>
+          <BrowserRouter>
+            <MenuLateral>
+              <AppRoutes />
+            </MenuLateral>
+          </BrowserRouter>
+         
+       
+        </AppDrawerProvider>
       </AppThemeProvider>
 
     </>
