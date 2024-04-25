@@ -1,6 +1,6 @@
 
 import { AppRoutes } from './routes';
-import { MenuLateral } from './shared/components/menu-lateral/Menu-lateral';
+import { MenuLateral } from './shared/components';
 import { AppDrawerProvider, AppThemeProvider } from './shared/contexts';
 import { BrowserRouter } from 'react-router-dom';
 
