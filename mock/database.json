@@ -1,0 +1,12 @@
+{
+    "pessoas": [
+        {
+            "id": 1,
+            "nome": "Renan"
+        },
+        {
+            "id": 2,
+            "nome": "Lucas"
+        }
+    ]
+}
