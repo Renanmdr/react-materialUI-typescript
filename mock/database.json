@@ -1,94 +1,70 @@
 {
-    "pessoas": [
-        {
-            "id": 1,
-            "cidadeId": 1,
-            "email": "Juca@gmail.com",
-            "nomeCompleto": "Juca Silva"
-        },
-        {
-            "id": 2,
-            "cidadeId": 2,
-            "email": "renan@gmail.com",
-            "nomeCompleto": "Renan Silva"
-        },
-        {
-            "id": 3,
-            "cidadeId": 3,
-            "email": "felipe@gmail.com",
-            "nomeCompleto": "Felipe Silva"
-        },
-        {
-            "id": 4,
-            "cidadeId": 4,
-            "email": "marcos@gmail.com",
-            "nomeCompleto": "Marcos Silva"
-        },
-        {
-            "id": 5,
-            "cidadeId": 5,
-            "email": "livia@gmail.com",
-            "nomeCompleto": "Livia Silva"
-        },
-        {
-            "id": 6,
-            "cidadeId": 6,
-            "email": "leandro@gmail.com",
-            "nomeCompleto": "Leandro Silva"
-        },
-        {
-            "id": 7,
-            "cidadeId": 7,
-            "email": "romulo@gmail.com",
-            "nomeCompleto": "Romulo Silva"
-        },
-        {
-            "id": 8,
-            "cidadeId": 8,
-            "email": "fernando@gmail.com",
-            "nomeCompleto": "Fernando Silva"
-        },
-        {
-            "id": 9,
-            "cidadeId": 9,
-            "email": "luciano@gmail.com",
-            "nomeCompleto": "Luciano Silva"
-        },
-        {
-            "id": 10,
-            "cidadeId": 10,
-            "email": "romulo@gmail.com",
-            "nomeCompleto": "Romulo Silva"
-        },
-        {
-            "id": 11,
-            "cidadeId": 11,
-            "email": "fernando@gmail.com",
-            "nomeCompleto": "Fernando Silva"
-        },
-        {
-            "id": 12,
-            "cidadeId": 12,
-            "email": "luciano@gmail.com",
-            "nomeCompleto": "Luciano Silva"
-        },
-        {
-            "id": 13,
-            "cidadeId": 13,
-            "email": "romulo@gmail.com",
-            "nomeCompleto": "Romulo Silva"
-        },
-        {
-            "id": 14,
-            "cidadeId": 14,
-            "email": "fernando@gmail.com",
-            "nomeCompleto": "Fernando Silva"
-        },
-        {
-            "id": 15,
-            "cidadeId": 15,
-            "email": "luciano@gmail.com",
-            "nomeCompleto": "Luciano Silva"
-        }
-    ]
+  "pessoas": [
+    {
+      "id": 2,
+      "cidadeId": 2,
+      "email": "renan@gmail.com",
+      "nomeCompleto": "Renan Silva"
+    },
+    {
+      "id": 4,
+      "cidadeId": 4,
+      "email": "marcos@gmail.com",
+      "nomeCompleto": "Marcos Silva"
+    },
+    {
+      "id": 5,
+      "cidadeId": 5,
+      "email": "livia@gmail.com",
+      "nomeCompleto": "Livia Silva"
+    },
+    {
+      "id": 6,
+      "cidadeId": 6,
+      "email": "leandro@gmail.com",
+      "nomeCompleto": "Leandro Silva"
+    },
+    {
+      "id": 9,
+      "cidadeId": 9,
+      "email": "luciano@gmail.com",
+      "nomeCompleto": "Luciano Silva"
+    },
+    {
+      "id": 10,
+      "cidadeId": 10,
+      "email": "romulo@gmail.com",
+      "nomeCompleto": "Romulo Silva"
+    },
+    {
+      "id": 11,
+      "cidadeId": 11,
+      "email": "fernando@gmail.com",
+      "nomeCompleto": "Fernando Silva"
+    },
+    {
+      "id": 12,
+      "cidadeId": 12,
+      "email": "luciano@gmail.com",
+      "nomeCompleto": "Luciano Silva"
+    },
+    {
+      "id": 13,
+      "cidadeId": 13,
+      "email": "romulo@gmail.com",
+      "nomeCompleto": "Romulo Silva"
+    },
+    {
+      "id": 14,
+      "cidadeId": 14,
+      "email": "fernando@gmail.com",
+      "nomeCompleto": "Fernando Silva"
+    },
+    {
+      "id": 15,
+      "cidadeId": 15,
+      "email": "luciano@gmail.com",
+      "nomeCompleto": "Luciano Silva"
+    }
+  ]
 }

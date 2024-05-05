@@ -76,7 +76,6 @@ const updateById = async (id: number, dados: IDetalhePessoa ):Promise<void | Err
 
     await Api.put(`/pessoas/${id}`, dados);
 
-    return new Error('Erro ao atualizar o reguistro');
 
   } catch (error) {
     console.error(error);
@@ -89,8 +88,6 @@ const deleteById = async (id: number):Promise<void | Error> => {
 
     await Api.delete(`/pessoas/${id}`);
 
-
-    return new Error('Erro ao deletar os reguistro');
   } catch (error) {
     console.error(error);
     return new Error((error as { message: string }).message || 'Erro ao deletar o reguistro');

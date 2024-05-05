@@ -4,7 +4,7 @@ export const Environment = {
   /**
   * Define a quantidade de linhas a ser carrega por padão nas listagens
   */
-  LIMITE_DE_LINHAS: 10,
+  LIMITE_DE_LINHAS: 6,
 
   /**
    * Placeholder exibido nas inputs
