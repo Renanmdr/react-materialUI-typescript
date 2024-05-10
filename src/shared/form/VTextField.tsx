@@ -24,9 +24,9 @@ export const VTextField: React.FC<TVTextField> = ({name, ...rest}) => {
       defaultValue={defaultValue}
 
       value={value}
-      onChange={e => setValue(e.target.value)}
+      onChange={e => {setValue(e.target.value); rest.onChange?.(e);}}
 
-      onKeyDown={() => error ? clearError() : undefined}
+      onKeyDown={(e) => { error && clearError(); rest.onKeyDown?.(e); } }
     />
   );
 };
