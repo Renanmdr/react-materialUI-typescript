@@ -3,7 +3,7 @@
     {
       "nomeCompleto": "Renan Mattar",
       "email": "renan@gmail.com",
-      "cidadeId": "1",
+      "cidadeId": 1,
       "id": 2
     },
     {
@@ -83,6 +83,36 @@
       "email": "edu@gmail.com",
       "cidadeId": "2",
       "id": 18
+    }
+  ],
+  "cidades": [
+    {
+      "nome": "Bragança",
+      "id": 1
+    },
+    {
+      "nome": "Santa Izabel",
+      "id": 2
+    },
+    {
+      "nome": "Portel",
+      "id": 3
+    },
+    {
+      "nome": "Alter do Chão",
+      "id": 4
+    },
+    {
+      "nome": "Benevides",
+      "id": 5
+    },
+    {
+      "nome": "Castanhal",
+      "id": 6
+    },
+    {
+      "nome": "Santa Maria",
+      "id": 7
     }
   ]
 }
