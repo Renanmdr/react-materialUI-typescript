@@ -7,6 +7,7 @@ import { LayoutBaseDePagina } from '../../shared/layouts/LayoutBaseDePagina';
 import { FerramentasDeDetalhe } from '../../shared/components';
 import { PessoasService } from '../../shared/servers/api/pessoas/PessoasService';
 import { VTextField, VForm, useVForm, IVFormErrors } from '../../shared/form';
+import { AutoCompleteCidade } from './components/AutoCompleteCidade';
 
 interface IFormData {
   email: string
@@ -50,6 +51,7 @@ export const DetalheDePessoas = () => {
   },[id]);
 
   const handleSave = (dados: IFormData ) => {
+    console.log(dados);
     formValidationSchema
       .validate(dados, {abortEarly: false})
       .then((dadosValidados) => {
@@ -164,8 +166,7 @@ export const DetalheDePessoas = () => {
 
             <Grid container item direction={'row'} spacing={2}>
               <Grid item xs={12} sm={12} md={6} lg={4} xl={2}>
-                <VTextField fullWidth disabled={isLoading} label='Cidade' name='cidadeId'
-                />
+                <AutoCompleteCidade  isExternalLoading={isLoading}/>
               </Grid>
             </Grid>
 

@@ -7,20 +7,22 @@ import { useMatch, useNavigate, useResolvedPath } from 'react-router-dom';
 interface IListItemLinkProps {
   icon: string
   label: string
-  to?: string
+  to: string
   onClick?: () => void
 }
 
 const ListItemLink: React.FC<IListItemLinkProps> = ({icon, label, onClick, to}) => {
   const navigate = useNavigate();
-  const path = to ? to : '';
+
+  const resolvePath = useResolvedPath(to);
+  const match = useMatch({ path: resolvePath.pathname, end: false });
+
   const handleClick = () => {
-    navigate(path);
+    navigate(to);
     onClick?.();
   };
 
-  const resolvePath = useResolvedPath(path);
-  const match = useMatch({path: resolvePath.pathname, end: false});
+  
   
   return (
     <ListItemButton selected={!!match} onClick={handleClick}>
@@ -66,7 +68,14 @@ export const MenuLateral: React.FC<IMenuLateralProps> = ({children}) => {
             </List>
           </Box>
           <Box>
-            <ListItemLink label='Alternar tema' icon='dark_mode' onClick={toggleTheme}   />
+            <List component="nav">
+              <ListItemButton onClick={toggleTheme}>
+                <ListItemIcon>
+                  <Icon>dark_mode</Icon>
+                </ListItemIcon>
+                <ListItemText primary="Alternar tema" />
+              </ListItemButton>
+            </List>
           </Box>
 
         </Box>

@@ -9,7 +9,7 @@
     {
       "nomeCompleto": "Marcos S",
       "email": "marcos@gmail.com",
-      "cidadeId": 4,
+      "cidadeId": 2,
       "id": 4
     },
     {
@@ -83,6 +83,12 @@
       "email": "edu@gmail.com",
       "cidadeId": "2",
       "id": 18
+    },
+    {
+      "nomeCompleto": "Maicon",
+      "email": "maicon@gmail.com",
+      "cidadeId": 5,
+      "id": 19
     }
   ],
   "cidades": [
@@ -114,5 +120,8 @@
       "nome": "Santa Maria",
       "id": 7
     }
-  ]
+  ],
+  "auth": {
+    "accessToken": "aaaaaaaaaaaaa.bbbbbbbbb.cccccccccc"
+  }
 }
